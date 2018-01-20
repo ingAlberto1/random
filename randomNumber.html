@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<h2>Flipcoin</h2>
+
+<p id="randomN"></p>
+
+<script>
+	var i = 0;
+	var alea=0;
+	var number=0;
+	var number = prompt("Please enter your a number");
+
+
+if (number >0 && number <=1000000) 
+{
+      
+
+while (i < number) 
+{
+	 if (flip()==true)
+	 {
+	 	i++;
+	 	alea++;
+	 }
+	 else 
+	 {
+	 	i++;
+	 }
+   
+}
+  document.getElementById("randomN").innerHTML = alea;
+ }
+ else
+ {
+document.getElementById("randomN").innerHTML = "provide a correct number";
+}
+
+function flip() {
+  return Math.random() >= 0.5;
+}
+</script>
+
+</body>
+</html>
